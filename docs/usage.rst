@@ -8,6 +8,7 @@ This package is available on `PyPI`_ and `Crate.io`_.
 
 Install from PyPI with ``pip``:
 
+
 .. code-block:: bash
 
     $ pip install django-simple-history
@@ -18,6 +19,17 @@ Install from PyPI with ``pip``:
 
 Quickstart
 ----------
+
+Add simple_history to your ``INSTALLED_APPS`` in the settings.py file for the project
+
+.. code-block:: python
+
+	INSTALLED_APPS = (
+    	...,
+    	...,
+    	'polls',
+    	'simple_history',
+	)
 
 To track history for a model, create an instance of
 ``simple_history.models.HistoricalRecords`` on the model.
